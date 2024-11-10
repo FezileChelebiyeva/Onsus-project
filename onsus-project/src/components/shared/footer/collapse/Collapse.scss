@@ -1,0 +1,80 @@
+.ant-collapse {
+  border: 0;
+  background: transparent;
+  .ant-collapse-item {
+    border: 0;
+    .ant-collapse-header {
+      .ant-collapse-expand-icon {
+        display: none;
+      }
+      .ant-collapse-header-text {
+        .nav-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          .link-title {
+            color: #333e48;
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+          }
+          .open-btn {
+            color: #333e48;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .ant-collapse-item-active {
+    border: 0;
+    .ant-collapse-header {
+      .ant-collapse-header-text {
+        .nav-header {
+          .link-title {
+            color: #004ec3;
+          }
+          .open-btn {
+            color: #004ec3;
+          }
+        }
+      }
+    }
+  }
+  .ant-collapse-content {
+    border: 0;
+    background: #fafafa;
+    .ant-collapse-content-box {
+        padding: 0 16px;
+      .collapse-links {
+        li {
+          margin: 10px 0;
+          a {
+            width: 100%;
+            color: #333e48;
+            position: relative;
+            transition: all 0.3s;
+            font-weight: 500;
+            &:hover {
+              color: #004ec3;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              width: 0%;
+              height: 1.5px;
+              background: #004ec3;
+              transition: all 0.3s;
+            }
+            &:hover::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

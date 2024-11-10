@@ -1,0 +1,25 @@
+#products {
+  margin-bottom: 80px;
+  .categories-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 0;
+    .category-btn {
+      background-color: #fff;
+      border: 0;
+      outline: 0;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 25px;
+      color: #333e48;
+    }
+    .active-btn {
+      font-weight: 600;
+    }
+  }
+  .product-cards{
+    border-top: 1px solid #ebebeb;
+    padding: 20px 0;
+  }
+}

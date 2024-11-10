@@ -1,0 +1,231 @@
+#devices-price {
+  margin: 80px 0;
+  background-image: linear-gradient(#5a5a5a11, #4d4d4d1a),
+    url("../../../../assets/images/home/devices-price/bg-image.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  .devices-price {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    .device-picture {
+      width: 33%;
+      img {
+        width: 100%;
+      }
+    }
+    .about-device {
+      width: 34%;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      row-gap: 30px;
+      .price-title {
+        color: #333e48;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      .device-price {
+        color: #004ec3;
+        font-size: 71px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .price-subtitle {
+        color: #333e48;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      .device-detail {
+        color: #333e48;
+        font-family: Helvetica, sans-serif;
+        font-size: 46px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 52px;
+      }
+    }
+    .other-devices-cards {
+      width: 29.6%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      .item-card {
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 35px;
+        position: relative;
+        cursor: pointer;
+        .item-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .item-picture {
+            width: 100%;
+            max-width: 120px;
+            img {
+              transition: transform 0.3s ease;
+              width: 100%;
+            }
+          }
+          .item-details {
+            width: 100%;
+            max-width: calc(100% - 120px);
+            padding: 15px;
+            .item-categories {
+              font-family: "Poppins", sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+              color: #73787d;
+            }
+            .item-model {
+              a {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                line-height: 1.2em;
+                max-height: calc(1.2em * 2);
+                margin-bottom: 5px;
+                &:hover {
+                  color: #ff3d3d;
+                }
+              }
+            }
+            .item-price {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 22px;
+              color: #333e48;
+            }
+          }
+        }
+        &:hover {
+          .more-item-info {
+            opacity: 1;
+            height: auto;
+          }
+          .item-picture {
+            img {
+              transform: scale(1.06);
+            }
+          }
+        }
+      }
+      .more-item-info {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, height 0.3s ease;
+        position: absolute;
+        left: 0;
+        top: 142px;
+        z-index: 4;
+        background: #fff;
+        width: 100%;
+        padding-bottom: 15px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .more-info {
+          padding: 15px;
+          .info {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            width: 100%;
+            margin-bottom: 2px;
+            p {
+              width: 40%;
+              font-family: "Poppins", sans-serif;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 22px;
+              color: #73787d;
+            }
+          }
+        }
+        .time-delivery {
+          border-top: 1px solid #ebebeb;
+          display: flex;
+          align-items: center;
+          margin: 15px;
+          padding-top: 15px;
+          column-gap: 10px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 22px;
+          color: #73787d;
+        }
+        .add-to-cart-btn {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+  @media (max-width: 993px) {
+    .devices-price {
+      justify-content: space-between;
+      row-gap: 40px;
+      .device-picture {
+        width: 40%;
+      }
+      .about-device {
+        width: 40%;
+      }
+      .other-devices-cards {
+        width: 100%;
+        flex-direction: row;
+        column-gap: 40px;
+      }
+      .more-item-info{
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .devices-price {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+      .device-picture {
+        width: 90%;
+      }
+      .about-device {
+        width: 100%;
+      }
+      .other-devices-cards {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .devices-price{
+      .about-device{
+        .price-title{
+          font-size: 18px;
+        }
+        .device-price{
+          font-size: 50px;
+        }
+        .price-subtitle{
+          font-size: 18px;
+        }
+        .device-detail{
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

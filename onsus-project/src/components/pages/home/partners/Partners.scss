@@ -1,0 +1,41 @@
+#partners {
+  margin-bottom: 80px;
+  .partners {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 20px 0;
+    img {
+      height: auto;
+      max-width: 100%;
+      width: 130px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .partners {
+      img {
+        width: 280px;
+      }
+    }
+  }
+  @media (max-width: 993px) {
+    .partners {
+      img {
+        width: 280px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .partners {
+      img {
+        width: 320px;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .partners {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}

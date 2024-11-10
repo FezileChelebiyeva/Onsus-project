@@ -1,0 +1,102 @@
+.middle-elements {
+  background-color: #333e48;
+  color: #fff;
+  padding: 20px 0;
+  .middle-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .register-payment {
+      .payment {
+        font-family: "Inter", Sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 25px;
+        .email-icon {
+          margin-right: 6px;
+        }
+      }
+      .register-info {
+        font-family: "Inter", Sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+      }
+    }
+    .subscription {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      input {
+        display: inline;
+        width: 100%;
+        color: #73787d;
+        font-family: "Inter";
+        font-size: 13px;
+        padding: 15px 20px;
+        border-radius: 50px;
+        border: 0;
+        outline: 0;
+      }
+      .subscription-btn {
+        background: #ff3d3d;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 15px 35px;
+        border-radius: 50px;
+        transition: all 0.5s;
+        border: 0;
+        outline: 0;
+        &:hover {
+          background-color: #004ec3;
+        }
+      }
+    }
+  }
+  @media (max-width: 993px) {
+    .middle-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+      .register-payment {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .subscription {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    .middle-content {
+      .register-payment {
+        .payment {
+          font-size: 19px;
+        }
+        .register-info {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .middle-content {
+      .register-payment {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .payment {
+          font-size: 22px;
+        }
+        .register-info {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
