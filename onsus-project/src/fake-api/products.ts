@@ -1,15 +1,288 @@
 const categories_products = [
-    {
-      id: 1,
-      name: "cat1",
-    },
-    {
-      id: 2,
-      name: "cat2",
-    },
-    {
-      id: 3,
-      name: "cat3",
-    },
-  ];
-  export default categories_products
+  {
+    id: 1,
+    category: [
+      {
+        id: 1,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4901.webp",
+        title: "Apple products",
+        info: "Apple iPhone 11 Pro Max, US Version, 64GB, Gold",
+        price: "475.00",
+        discount_price: null,
+        brand: "Apple",
+        model: "IPhone 11 Pro Max",
+        screen_size: null,
+        resolution: null,
+        refresh_rate: null,
+        system: "IOS 12",
+        memory: "64GB",
+        color: "gold",
+        delivery_time: 20
+      },
+      {
+        id: 2,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_5001.webp",
+        title: "Laptop & Tablet",
+        info: "Lenovo Tab M10 Plus (3rd Gen) – 2022 – Long Battery Life – 10″ FHD – 64GB Storage",
+        price: "119.13",
+        discount_price: "109.91",
+        brand: "Lenovo",
+        model: "Tab M10 Plus",
+        screen_size: "10.61 Inches",
+        resolution: null,
+        refresh_rate: null,
+        system: null,
+        memory: "64GB",
+        color: "gray",
+        delivery_time: null
+      },
+      {
+        id: 3,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4701.webp",
+        title: "TV & Computer Screen",
+        info: "SAMSUNG 34-Inch Odyssey G5 Ultra-Wide Gaming Monitor with 1000R Curved Screen, Black",
+        price: "449.99",
+        discount_price: "99.91",
+        brand: "Samsung",
+        model: "Odyssey G5",
+        screen_size: "34″",
+        refresh_rate: "165 Hz",
+        resolution: "3440 x 1440",
+        system: null,
+        memory: null,
+        color: "",
+        delivery_time: 5
+      },
+      {
+        id: 4,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4901.webp",
+        title: "Apple products",
+        info: "Apple iPhone 11 Pro Max, US Version, 64GB, Gold",
+        price: "475.00",
+        discount_price: null,
+        brand: "Apple",
+        model: "IPhone 11 Pro Max",
+        screen_size: null,
+        resolution: null,
+        refresh_rate: null,
+        system: "IOS 12",
+        memory: "64GB",
+        color: "gold",
+        delivery_time: 20
+      },
+      {
+        id: 5,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_5001.webp",
+        title: "Laptop & Tablet",
+        info: "Lenovo Tab M10 Plus (3rd Gen) – 2022 – Long Battery Life – 10″ FHD – 64GB Storage",
+        price: "119.13",
+        discount_price: "109.91",
+        brand: "Lenovo",
+        model: "Tab M10 Plus",
+        screen_size: "10.61 Inches",
+        resolution: null,
+        refresh_rate: null,
+        system: null,
+        memory: "64GB",
+        color: "gray",
+        delivery_time: null
+      },
+    ],
+  },
+  {
+    id: 2,
+    category: [
+      {
+        id: 1,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_5001.webp",
+        title: "Laptop & Tablet",
+        info: "Lenovo Tab M10 Plus (3rd Gen) – 2022 – Long Battery Life – 10″ FHD – 64GB Storage",
+        price: "119.13",
+        discount_price: "109.91",
+        brand: "Lenovo",
+        model: "Tab M10 Plus",
+        screen_size: "10.61 Inches",
+        resolution: null,
+        refresh_rate: null,
+        system: null,
+        memory: "64GB",
+        color: "gray",
+        delivery_time: null
+      },
+      {
+        id: 2,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4901.webp",
+        title: "Apple products",
+        info: "Apple iPhone 11 Pro Max, US Version, 64GB, Gold",
+        price: "475.00",
+        discount_price: null,
+        brand: "Apple",
+        model: "IPhone 11 Pro Max",
+        screen_size: null,
+        resolution: null,
+        refresh_rate: null,
+        system: "IOS 12",
+        memory: "64GB",
+        color: "gold",
+        delivery_time: 20
+      },
+      {
+        id: 3,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4701.webp",
+        title: "TV & Computer Screen",
+        info: "SAMSUNG 34-Inch Odyssey G5 Ultra-Wide Gaming Monitor with 1000R Curved Screen, Black",
+        price: "449.99",
+        discount_price: "99.91",
+        brand: "Samsung",
+        model: "Odyssey G5",
+        screen_size: "34″",
+        refresh_rate: "165 Hz",
+        resolution: "3440 x 1440",
+        system: null,
+        memory: null,
+        color: "",
+        delivery_time: 5
+      },
+      {
+        id: 4,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_5001.webp",
+        title: "Laptop & Tablet",
+        info: "Lenovo Tab M10 Plus (3rd Gen) – 2022 – Long Battery Life – 10″ FHD – 64GB Storage",
+        price: "119.13",
+        discount_price: "109.91",
+        brand: "Lenovo",
+        model: "Tab M10 Plus",
+        screen_size: "10.61 Inches",
+        resolution: null,
+        refresh_rate: null,
+        system: null,
+        memory: "64GB",
+        color: "gray",
+        delivery_time: null
+      },
+      {
+        id: 5,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4901.webp",
+        title: "Apple products",
+        info: "Apple iPhone 11 Pro Max, US Version, 64GB, Gold",
+        price: "475.00",
+        discount_price: null,
+        brand: "Apple",
+        model: "IPhone 11 Pro Max",
+        screen_size: null,
+        resolution: null,
+        refresh_rate: null,
+        system: "IOS 12",
+        memory: "64GB",
+        color: "gold",
+        delivery_time: 20
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: [
+      {
+        id: 1,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4701.webp",
+        title: "TV & Computer Screen",
+        info: "SAMSUNG 34-Inch Odyssey G5 Ultra-Wide Gaming Monitor with 1000R Curved Screen, Black",
+        price: "449.99",
+        discount_price: "99.91",
+        brand: "Samsung",
+        model: "Odyssey G5",
+        screen_size: "34″",
+        refresh_rate: "165 Hz",
+        resolution: "3440 x 1440",
+        system: null,
+        memory: null,
+        color: "",
+        delivery_time: 5
+      },
+      {
+        id: 2,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_5001.webp",
+        title: "Laptop & Tablet",
+        info: "Lenovo Tab M10 Plus (3rd Gen) – 2022 – Long Battery Life – 10″ FHD – 64GB Storage",
+        price: "119.13",
+        discount_price: "109.91",
+        brand: "Lenovo",
+        model: "Tab M10 Plus",
+        screen_size: "10.61 Inches",
+        resolution: null,
+        refresh_rate: null,
+        system: null,
+        memory: "64GB",
+        color: "gray",
+        delivery_time: null
+      },
+      {
+        id: 3,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4901.webp",
+        title: "Apple products",
+        info: "Apple iPhone 11 Pro Max, US Version, 64GB, Gold",
+        price: "475.00",
+        discount_price: null,
+        brand: "Apple",
+        model: "IPhone 11 Pro Max",
+        screen_size: null,
+        resolution: null,
+        refresh_rate: null,
+        system: "IOS 12",
+        memory: "64GB",
+        color: "gold",
+        delivery_time: 20
+      },
+      {
+        id: 1,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_4701.webp",
+        title: "TV & Computer Screen",
+        info: "SAMSUNG 34-Inch Odyssey G5 Ultra-Wide Gaming Monitor with 1000R Curved Screen, Black",
+        price: "449.99",
+        discount_price: "99.91",
+        brand: "Samsung",
+        model: "Odyssey G5",
+        screen_size: "34″",
+        refresh_rate: "165 Hz",
+        resolution: "3440 x 1440",
+        system: null,
+        memory: null,
+        color: "",
+        delivery_time: 5
+      },
+      {
+        id: 5,
+        image:
+          "https://oneuswp.themesflat.com/wp-content/uploads/2023/08/o_5001.webp",
+        title: "Laptop & Tablet",
+        info: "Lenovo Tab M10 Plus (3rd Gen) – 2022 – Long Battery Life – 10″ FHD – 64GB Storage",
+        price: "119.13",
+        discount_price: "109.91",
+        brand: "Lenovo",
+        model: "Tab M10 Plus",
+        screen_size: "10.61 Inches",
+        resolution: null,
+        refresh_rate: null,
+        system: null,
+        memory: "64GB",
+        color: "gray",
+        delivery_time: null
+      },
+    ],
+  },
+];
+export default categories_products;

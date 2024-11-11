@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       onClick={onClick}
-      className={`cart-btn ${className}`} // 'btn' can be a base style in your CSS
+      className={`cart-btn ${className}`}
       disabled={disabled}
     >
       {children}

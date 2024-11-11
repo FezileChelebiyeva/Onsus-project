@@ -98,6 +98,7 @@
                 line-height: 1.2em;
                 max-height: calc(1.2em * 2);
                 margin-bottom: 5px;
+                transition: color 0.3s ease;
                 &:hover {
                   color: #ff3d3d;
                 }
@@ -130,7 +131,6 @@
         transition: opacity 0.3s ease, height 0.3s ease;
         position: absolute;
         left: 0;
-        top: 142px;
         z-index: 4;
         background: #fff;
         width: 100%;

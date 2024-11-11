@@ -16,6 +16,7 @@
       .icon {
         color: #333e48;
         font-size: 22px;
+        transition: transform 0.5s ease;
       }
       .feature-title {
         color: #333e48;
@@ -28,6 +29,11 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 16px;
+      }
+      &:hover {
+        .icon {
+          animation: bounce 0.5s ease
+        }
       }
     }
   }
@@ -52,6 +58,14 @@
       .feature {
         width: 100%;
       }
+    }
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
     }
   }
 }
