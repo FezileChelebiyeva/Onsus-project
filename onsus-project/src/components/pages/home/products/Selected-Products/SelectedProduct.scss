@@ -162,6 +162,16 @@
       }
     }
   }
+  @media (max-width: 480px) {
+    .about-section {
+      .buy-amozon {
+        .buy-btn {
+          font-size: 10px;
+          padding: 5px;
+        }
+      }
+    }
+  }
 }
 
 .zoomable-image-container {
