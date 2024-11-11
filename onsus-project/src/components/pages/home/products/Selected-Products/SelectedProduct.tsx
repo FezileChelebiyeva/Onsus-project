@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Button from "../../../../shared/Button/CartButton";
 import "./SelectedProduct.scss";
+import { Modal } from "antd";
 const SelectedProduct = ({ selected_product }: any) => {
   const [stockCount, setStockCount] = useState<number>(1);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(false);
 
   // stock-count
   const incrementStockCount = () => {
@@ -14,11 +17,22 @@ const SelectedProduct = ({ selected_product }: any) => {
       setStockCount(stockCount - 1);
     }
   };
+  // image modal
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
 
+// zoom image
+  const handleDoubleClick = () => {
+    setIsZoomed(!isZoomed);
+  };
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
   return (
     <div className="product-detail-modal">
       <div className="modal-image">
-        <img src={selected_product.image} alt="" />
+        <img onClick={() => showModal()} src={selected_product.image} alt="" />
         {selected_product.discount_price && (
           <Button className="sale-btn">Sale!</Button>
         )}
@@ -66,9 +80,13 @@ const SelectedProduct = ({ selected_product }: any) => {
           <div className="stocks">
             <div className="stock-count">6 in stock</div>
             <div className="inc-dec-stock-count">
-              <div className="stock-btn" onClick={() => decrementStockCount()}>-</div>
+              <div className="stock-btn" onClick={() => decrementStockCount()}>
+                -
+              </div>
               <p>{stockCount}</p>
-              <div className="stock-btn" onClick={() => incrementStockCount()}>+</div>
+              <div className="stock-btn" onClick={() => incrementStockCount()}>
+                +
+              </div>
             </div>
           </div>
           <div className="buy-amozon">
@@ -90,6 +108,24 @@ const SelectedProduct = ({ selected_product }: any) => {
           </div>
         </div>
       </div>
+
+      <Modal
+        open={isModalVisible}
+        onCancel={handleCancel}
+        footer={null}
+        centered
+        closeIcon={null}
+        width={"70%"}
+      >
+         <div className="zoomable-image-container">
+      <img
+        src={selected_product.image}
+        alt="Zoomable"
+        className={`zoomable-image ${isZoomed ? 'zoomed-in' : ''}`}
+        onDoubleClick={handleDoubleClick} 
+      />
+    </div>
+      </Modal>
     </div>
   );
 };

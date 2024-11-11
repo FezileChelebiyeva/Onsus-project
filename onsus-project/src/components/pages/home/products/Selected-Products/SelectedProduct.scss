@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    cursor: pointer;
     img {
       width: 100%;
     }
@@ -27,6 +28,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: auto;
+      &:hover {
+        background-color: #ff3d3d;
+      }
     }
   }
   .about-section {
@@ -73,86 +78,113 @@
         }
       }
     }
-  }
-
-  .stocks {
-    margin: 20px 0;
-    .stock-count {
-      color: #333e48;
-      font-size: 15px;
+    .stocks {
+      margin: 20px 0;
+      .stock-count {
+        color: #333e48;
+        font-size: 15px;
+      }
+      .inc-dec-stock-count {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        margin: 10px 0;
+        .stock-btn {
+          font-size: 18px;
+          width: 30px;
+          height: 30px;
+          line-height: 25px;
+          color: #333e48;
+          border: 1px solid #bfc6cc;
+          border-radius: 50%;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
     }
-    .inc-dec-stock-count {
+
+    .buy-amozon {
+      margin: 15px 0;
+      .buy-btn {
+        width: 50%;
+        color: white;
+        background-color: #333e48;
+        transition: all 0.4s;
+        &:hover {
+          background-color: #ff3d3d;
+        }
+      }
+    }
+
+    .category_sku {
       display: flex;
       align-items: center;
       column-gap: 20px;
-      margin: 10px 0;
-      .stock-btn {
-        font-size: 18px;
-        width: 30px;
-        height: 30px;
-        line-height: 25px;
-        color: #333e48;
-        border: 1px solid #bfc6cc;
-        border-radius: 50%;
-        background-color: transparent;
+      .content {
         display: flex;
-        justify-content: center;
         align-items: center;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .buy-amozon {
-    margin: 15px 0;
-    .buy-btn {
-      width: 50%;
-      color: white;
-      background-color: #333e48;
-      transition: all 0.4s;
-      &:hover {
-        background-color: #ff3d3d;
-      }
-    }
-  }
-
-  .category_sku {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-    .content {
-      display: flex;
-      align-items: center;
-      column-gap: 5px;
-      .name {
-        color: #73787d;
-        font-size: 14px;
-      }
-      .field {
-        color: #73787d;
-        font-size: 14px;
-      }
-      a {
-        color: #73787d;
-        text-decoration: none;
-        transition: color 0.4s;
-        margin-right: 5px;
-        &:hover {
-          color: #004ec3;
+        column-gap: 5px;
+        .name {
+          color: #73787d;
+          font-size: 14px;
+        }
+        .field {
+          color: #73787d;
+          font-size: 14px;
+        }
+        a {
+          color: #73787d;
+          text-decoration: none;
+          transition: color 0.4s;
+          margin-right: 5px;
+          &:hover {
+            color: #004ec3;
+          }
         }
       }
     }
   }
+
   @media (max-width: 1200px) {
-column-gap: 0;
+    column-gap: 0;
   }
   @media (max-width: 993px) {
     flex-direction: column;
     row-gap: 10px;
-    .category_sku {
-      flex-direction: column;
-      align-items: flex-start;
-      row-gap: 0;
+    .about-section {
+      .category_sku {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 0;
+      }
+    }
+  }
+}
+
+.zoomable-image-container {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66vh;
+  .zoomable-image {
+    width: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .zoomed-in {
+    transform: scale(3);
+    cursor: all-scroll;
+  }
+  @media (max-width: 768px) {
+    max-height: 55vh;
+    .zoomable-image {
+      width: 100%;
     }
   }
 }
